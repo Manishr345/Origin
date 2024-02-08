@@ -2,7 +2,7 @@
 #include "matcom.h"
 int main(){
     int a[3][3], b[3][3], c[3][3], c2[2][2], a2[2][2], b2[2][2], option;
-    printf("1. Inverse of 3x3 Matrix\n2.Deteminant of 2x2 Matrix\n3.Determinant of 3x3 Matrix\n4.Multiplication of 2x2 Matrices\n5.Multiplication of 3x3 Matrices\n6.Addition of 3x3 Matrices\n7.Subtraction of 3x3 Matrices\n8.Adjoint of 3x3 Matrix\n9.Adjoint of 2x2 Matrix\nChoose one of the options above: ");
+    printf("1. Inverse of 3x3 Matrix\n2.Deteminant of 2x2 Matrix\n3.Determinant of 3x3 Matrix\n4.Multiplication of 2x2 Matrices\n5.Multiplication of 3x3 Matrices\n6.Addition of 3x3 Matrices\n7.Subtraction of 3x3 Matrices\n8.Adjoint of 3x3 Matrix\n9.Adjoint of 2x2 Matrix\n10.Addition of all elements in Matrix\n\nChoose one of the options above: ");
     scanf("%d", &option);
     switch(option){
         case 1:
@@ -122,6 +122,13 @@ int main(){
 		}
 	}
 	adjoint2(a2);
+	break;
+
+	case 10:
+	int n;
+	printf("Enter the dimension of Matrix: \n");
+	scanf("%d", &n);
+	addel(n);
 	break;
     }
     return 0;
